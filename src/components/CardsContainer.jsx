@@ -6,9 +6,9 @@ const CardsContainer = () => {
 
 	return (
 		<div className="cards-container">
-			{accommodationsList.map((accommodation, title, cover, id) => {
+			{accommodationsList.map((accommodation) => (
                 <Card key={accommodation.id} cover={accommodation.cover} title={accommodation.title} />
-            })}
+            ))}
 		</div>
 	);
 };
