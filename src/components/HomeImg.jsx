@@ -4,7 +4,8 @@ const HomeImg = ({ backgroundImg }) => {
     console.log(backgroundImg)
   return (
     <div className="img-container">
-        <img src={backgroundImg} alt="bienvenue chez nous, chez vous" className='img-container__image'/>
+        <img src={backgroundImg} alt="Chez vous, partout et ailleurs" className='img-container__image'/>
+        <h1 className="img-container__text">Chez vous, partout et ailleurs</h1>
     </div>
   )
 }

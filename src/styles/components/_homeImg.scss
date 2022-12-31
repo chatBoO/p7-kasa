@@ -2,8 +2,21 @@
     display: flex;
     width: 100%;
     margin: auto;
-    background: url("../../assets/img-home__background.png");
+    background: url("../../assets/img-container__background.png");
     border-radius: 25px;
+    position: relative;
+
+    &__text {
+        position: absolute;
+        color: white;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 400;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     
     &__image {
         width: 100%;
