@@ -1,7 +1,7 @@
 import React from 'react'
 
 const HomeImg = ({ backgroundImg }) => {
-    console.log(backgroundImg)
+
   return (
     <div className="img-container">
         <img src={backgroundImg} alt="Chez vous, partout et ailleurs" className='img-container__image'/>
