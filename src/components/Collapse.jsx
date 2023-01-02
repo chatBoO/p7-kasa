@@ -26,8 +26,8 @@ const Collapse = () => {
 				)}
 			</div>
             {isOpen && 
-            <div className='collapse-container__text'>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet excepturi necessitatibus, deleniti recusandae est maiores molestias natus expedita error quia obcaecati tempore illo provident explicabo sunt maxime nisi sed inventore?</div>
+            <div className='collapse-container__text__container'>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet excepturi necessitatibus, deleniti recusandae est maiores molestias natus expedita error quia obcaecati tempore illo provident explicabo sunt maxime nisi sed inventore?</p>
             </div>}
 		</div>
 	);
