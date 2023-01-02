@@ -9,7 +9,9 @@ const Home = () => {
     <div>
         <Header />
         <HomeImg backgroundImg={ImgHome} />
+        <main>
         <CardsContainer />
+        </main>
     </div>
   )
 }

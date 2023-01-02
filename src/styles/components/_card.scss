@@ -1,6 +1,19 @@
 .card-container {
+    display: flex;
+    align-items: flex-end;
     width: 340px;
     height: 340px;
-    background: linear-gradient(180deg,rgb(255, 97, 97) 0%,  rgba(3, 0, 0, 0.6) 100%);
+    padding: 20px;
+    background: rgb(255,97,97);
+    background: linear-gradient(180deg, rgba(255,97,97,1) 0%, rgb(119, 57, 57) 90%, rgb(95, 53, 53) 100%);
     border-radius: 10px;
+
+    &__text-container {
+        width: 60%;
+
+        &__text {
+            color: white;
+            margin: 0;
+        }
+    }
 }

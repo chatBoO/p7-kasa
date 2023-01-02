@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Card = ({ title }) => {
-  return (
-    <div className='card-container'>
-        <p>{title}</p>
-    </div>
-  )
-}
+	return (
+        <NavLink to="/fiche-logement/:id">
+		<div className="card-container">
+			<div className="card-container__text-container">
+				<p className="card-container__text-container__text">{title}</p>
+			</div>
+		</div>
+        </NavLink>
+	);
+};
 
-export default Card
+export default Card;
