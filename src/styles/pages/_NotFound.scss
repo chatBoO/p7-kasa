@@ -1,0 +1,20 @@
+.error404__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 250px;
+        margin: 0;
+    }
+
+    &__text {
+        font-size: xx-large;
+        margin-bottom: 150px;
+    }
+
+    &__back {
+        text-decoration: underline;
+    }
+}

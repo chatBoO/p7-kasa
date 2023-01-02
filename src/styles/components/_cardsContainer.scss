@@ -9,9 +9,9 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 340px);
-    justify-content: space-between;
     gap: 60px 50px;
+    justify-content: space-around;
     background-color: #F6F6F6;
     border-radius: 25px;
-    padding: 50px;
+    padding: 30px;
 }

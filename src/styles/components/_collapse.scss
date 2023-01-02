@@ -1,0 +1,28 @@
+.collapse-container {
+    width: 30%;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #FF6060;
+        color: white;
+        
+        & p {
+            margin: 0;
+        }
+    }
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #F6F6F6;
+    }
+}

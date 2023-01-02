@@ -3,6 +3,7 @@
     width: 100%;
     margin: auto;
     background: url("../../assets/img-container__background.png");
+    background-size: cover;
     border-radius: 25px;
     position: relative;
     margin-bottom: 40px;
@@ -22,6 +23,6 @@
     &__image {
         width: 100%;
         opacity: 0.6;
-        border-radius: 25px; 
+        border-radius: 25px;
     }
 }
