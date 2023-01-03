@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
+
 
 
 const NotFound = () => {
 	return (
 		<div className="error404">
-			<Header />
-			<div className="error404__container">
+			<main className="error404__container">
 				<h1 className="error404__container__title">404</h1>
 				<p className="error404__container__text">
 					Oups! La page que vous demandez n'existe pas.
@@ -15,7 +14,7 @@ const NotFound = () => {
 				<Link to="/">
 					<p className="error404__container__back">Retourner sur la page d'accueil</p>
 				</Link>
-			</div>
+			</main>
 		</div>
 	);
 };

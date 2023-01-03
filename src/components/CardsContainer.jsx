@@ -1,8 +1,7 @@
 import Card from "./Card";
 
-const CardsContainer = ({ logements }) => {
-	console.log(logements);
-	const accommodationsList = logements;
+const CardsContainer = ({ accommodations }) => {
+	const accommodationsList = accommodations;
 
 	return (
 		<article className="cards-container">

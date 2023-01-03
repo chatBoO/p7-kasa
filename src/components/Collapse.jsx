@@ -8,7 +8,7 @@ const Collapse = ({ title, content, collapseWidth }) => {
 	const toggle = () => setIsOpen(!isOpen);
 
 	return (
-		<div className="collapse-container" style={{width: collapseWidth}} onClick={toggle}>
+		<section className="collapse-container" style={{width: collapseWidth}} onClick={toggle}>
 			<div className="collapse-container__title">
 					<p>{title}</p>
 
@@ -30,7 +30,7 @@ const Collapse = ({ title, content, collapseWidth }) => {
             <div className='collapse-container__text__container'>
                 <p>{content}</p>
             </div>}
-		</div>
+		</section>
 	);
 };
 

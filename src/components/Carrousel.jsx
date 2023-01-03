@@ -52,6 +52,10 @@ const Carrousel = ({ currentAccommodation }) => {
 					onClick={goToRight}
 				/>
 			)}
+
+            <span className="carrousel__image-number">
+                {currentPicture +1} / {currentAccommodation.pictures.length}
+            </span>
 		</section>
 	);
 };

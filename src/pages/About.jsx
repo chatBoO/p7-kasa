@@ -1,16 +1,14 @@
 import React from "react";
 import Collapse from "../components/Collapse";
-import Header from "../components/Header";
 import ImgAbout from "../assets/img-about.png";
 import HomeImg from "../components/HomeImg";
 
 const About = () => {
 	return (
 		<div>
-			<Header />
 			<HomeImg backgroundImg={ImgAbout} />
 			<main>
-				<div className="collapses-container">
+				<artcile className="collapses-container">
 					<Collapse
 						title="Fiabilité"
 						collapseWidth={"80%"}
@@ -31,7 +29,7 @@ const About = () => {
 						collapseWidth={"80%"}
 						content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
 					/>
-				</div>
+				</artcile>
 			</main>
 		</div>
 	);
