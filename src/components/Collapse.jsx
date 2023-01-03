@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import upArrow from "../assets/up_arrow.png";
 import downArrow from "../assets/down_arrow.png";
 
-const Collapse = () => {
+const Collapse = ({ title, content, collapseWidth }) => {
+
 	const [isOpen, setIsOpen] = useState(false);
 	const toggle = () => setIsOpen(!isOpen);
 
 	return (
-		<div className="collapse-container" onClick={toggle}>
+		<div className="collapse-container" style={{width: collapseWidth}} onClick={toggle}>
 			<div className="collapse-container__title">
-					<p>Test</p>
+					<p>{title}</p>
 
 				{isOpen ? (
 					<img
@@ -27,7 +28,7 @@ const Collapse = () => {
 			</div>
             {isOpen && 
             <div className='collapse-container__text__container'>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet excepturi necessitatibus, deleniti recusandae est maiores molestias natus expedita error quia obcaecati tempore illo provident explicabo sunt maxime nisi sed inventore?</p>
+                <p>{content}</p>
             </div>}
 		</div>
 	);

@@ -1,16 +1,15 @@
-import listeLogements from "../data/logements.json";
 import Card from "./Card";
 
-const CardsContainer = () => {
-
-	const accommodationsList = listeLogements;
+const CardsContainer = ({ logements }) => {
+	console.log(logements);
+	const accommodationsList = logements;
 
 	return (
-		<div className="cards-container">
+		<article className="cards-container">
 			{accommodationsList.map((accommodation) => (
                 <Card key={accommodation.id} cover={accommodation.cover} title={accommodation.title} id={accommodation.id}/>
             ))}
-		</div>
+		</article>
 	);
 };
 

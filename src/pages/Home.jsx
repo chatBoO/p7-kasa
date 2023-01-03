@@ -4,13 +4,14 @@ import HomeImg from '../components/HomeImg'
 import ImgHome from "../assets/img-home.png"
 import CardsContainer from '../components/CardsContainer'
 
-const Home = () => {
+
+const Home = ({ logements }) => {
   return (
     <div>
         <Header />
-        <HomeImg backgroundImg={ImgHome} />
+        <HomeImg backgroundImg={ImgHome} text="Chez vous, partout et ailleurs" />
         <main>
-        <CardsContainer />
+        <CardsContainer logements={logements} />
         </main>
     </div>
   )

@@ -1,5 +1,5 @@
 .collapse-container {
-    width: 30%;
+    margin-bottom: 25px;
     border-radius: 10px;
     background-color: #F6F6F6;
     overflow: hidden;
@@ -24,14 +24,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 0px 15px;
         border-radius: 10px;
         overflow: hidden;
        
 
         & p {
-            animation: collapse 0.5s ease-out forwards;
+            animation: collapse 0.3s ease-out forwards;
             background-color: #F6F6F6;
+            font-size: 20px;
         }
     }
 }
