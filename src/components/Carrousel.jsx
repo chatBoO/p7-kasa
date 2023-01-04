@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import LeftArrow from "../assets/left_arrow.png";
 import RightArrow from "../assets/right_arrow.png";
 
-const Carrousel = ({ currentAccommodation }) => {
+const Carrousel = ({ id, title, pictures }) => {
 	const [currentPicture, setCurrentPicture] = useState(0);
 
 	const goToLeft = () => {
 		setCurrentPicture(
 			currentPicture === 0
-				? currentAccommodation.pictures.length - 1 // "currentAccommodation.pictures.length" -1 car l'index commence à 0
+				? pictures.length - 1 // "pictures.length" -1 car l'index commence à 0
 				: currentPicture - 1
 		); 
 	};
 
 	const goToRight = () => {
 		setCurrentPicture(
-			currentPicture === currentAccommodation.pictures.length - 1
+			currentPicture === pictures.length - 1
 				? 0
 				: currentPicture + 1
 		);
@@ -23,19 +23,19 @@ const Carrousel = ({ currentAccommodation }) => {
 
 	return (
 		<section className="carrousel">
-			{currentAccommodation.pictures.map((picture, index) => (
-				<div key={currentAccommodation.id + index}>
+			{pictures.map((picture, index) => (
+				<div key={id + index}>
 					{index === currentPicture && (
 						<img
 							src={picture}
-							alt={currentAccommodation.title}
+							alt={title}
 							className="carrousel__image"
 						/>
 					)}
 				</div>
 			))}
 
-			{currentAccommodation.pictures.length > 1 && (
+			{pictures.length > 1 && (
 				<img
 					src={LeftArrow}
 					alt="Flèche gauche"
@@ -44,7 +44,7 @@ const Carrousel = ({ currentAccommodation }) => {
 				/>
 			)}
 
-			{currentAccommodation.pictures.length > 1 && (
+			{pictures.length > 1 && (
 				<img
 					src={RightArrow}
 					alt="flèche droite"
@@ -54,7 +54,7 @@ const Carrousel = ({ currentAccommodation }) => {
 			)}
 
             <span className="carrousel__image-number">
-                {currentPicture +1} / {currentAccommodation.pictures.length}
+                {currentPicture +1} / {pictures.length}
             </span>
 		</section>
 	);

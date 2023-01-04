@@ -1,36 +1,19 @@
-import React, { useState } from "react";
-import upArrow from "../assets/up_arrow.png";
-import downArrow from "../assets/down_arrow.png";
-
-const Collapse = ({ title, content, collapseWidth }) => {
-
-	const [isOpen, setIsOpen] = useState(false);
-	const toggle = () => setIsOpen(!isOpen);
-
+const Collapse = ({ title, description, equipments, collapseWidth }) => {
 	return (
-		<div className="collapse-container" style={{width: collapseWidth}} onClick={toggle}>
-			<div className="collapse-container__title">
-					<p>{title}</p>
+		<section
+			className="collapse-container"
+			style={{ width: collapseWidth }}
+		>
+			<details>
+				<summary className="collapse-container__title">
+					{title} <i className="fa-solid fa-chevron-down"></i>
+				</summary>
 
-				{isOpen ? (
-					<img
-						className="collapse-container__upArrow"
-						src={upArrow}
-						alt="fleche haut"
-					/>
-				) : (
-					<img
-						className="collapse-container__downArrow"
-						src={downArrow}
-						alt="fleche bas"
-					/>
-				)}
-			</div>
-            {isOpen && 
-            <div className='collapse-container__text__container'>
-                {content}
-            </div>}
-		</div>
+				<div className="collapse-container__text__container">
+					{description ? description : equipments}
+				</div>
+			</details>
+		</section>
 	);
 };
 
