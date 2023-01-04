@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
 import Rating from "../components/Rating";
+import NotFound from "./NotFound";
 
 const Accommodation = ({ accommodations }) => {
 	const { id } = useParams(); // Récupération de l'id en paramètre URL, avec {id} entre accolades sinon non reconnu
@@ -12,12 +13,8 @@ const Accommodation = ({ accommodations }) => {
 		(acc) => acc.id === id
 	);
 
-	// let accommodationEquipements = [];
-	// currentAccommodation.equipments.map((equipement) =>
-	// 	accommodationEquipements.push(equipement)
-	// );
+	return ( currentAccommodation ?
 
-	return (
 		<main>
 			<Carrousel currentAccommodation={currentAccommodation} />
 
@@ -74,7 +71,7 @@ const Accommodation = ({ accommodations }) => {
 					}
 				/>
 			</article>
-		</main>
+		</main> : <NotFound />
 	);
 };
 
