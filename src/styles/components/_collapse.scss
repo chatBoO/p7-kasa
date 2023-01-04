@@ -1,8 +1,6 @@
 .collapse-container {
     margin-bottom: 25px;
     border-radius: 10px;
-    background-color: #F6F6F6;
-    overflow: hidden;
 
 
     &__title {
@@ -14,6 +12,7 @@
         border-radius: 10px;
         background-color: #FF6060;
         color: white;
+        transform: translateY(10px);
         
         & p {
             margin: 0;
@@ -22,25 +21,23 @@
 
     &__text__container {
         display: flex;
+        height: 50px;
         align-items: center;
-        padding: 0px 15px;
+        padding: 30px 15px;
         border-radius: 10px;
-        overflow: hidden;
-       
-        & p {
-            animation: collapse 0.3s ease-out forwards;
-            background-color: #F6F6F6;
-            font-size: 18px;
-            font-weight: 300;
-        }
+        animation: collapse 0.3s ease-out forwards;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.5em;
+        background-color: #F6F6F6;
+        overflow:hidden ;
+        
     }
 }
 
 @keyframes collapse {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0%);
+    
+    to {
+        height: 100%;
     }
 }

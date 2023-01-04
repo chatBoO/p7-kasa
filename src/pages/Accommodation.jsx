@@ -53,18 +53,18 @@ const Accommodation = ({ accommodations }) => {
 				</section>
 			</article>
 
-			<div className="accommodation-collapses">
+			<article className="accommodation-collapses">
 				<Collapse
 					title="Description"
-					collapseWidth="45%"
+					collapseWidth="47%"
 					content={currentAccommodation.description}
 				/>
 
 				<Collapse
 					title="Équipements"
-					collapseWidth="45%"
+					collapseWidth="47%"
 					content={
-						<ul className="accommodation-collapses__equipements">
+						<ul className="accommodation-collapses__equipments">
 							{currentAccommodation.equipments.map(
 								(equipment) => (
 									<li key={equipment}>{equipment}</li>
@@ -73,7 +73,7 @@ const Accommodation = ({ accommodations }) => {
 						</ul>
 					}
 				/>
-			</div>
+			</article>
 		</main>
 	);
 };

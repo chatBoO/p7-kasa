@@ -28,7 +28,7 @@ const Collapse = ({ title, content, collapseWidth }) => {
 			</div>
             {isOpen && 
             <div className='collapse-container__text__container'>
-                <p>{content}</p>
+                {content}
             </div>}
 		</section>
 	);
