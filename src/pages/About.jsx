@@ -10,7 +10,7 @@ const About = ({ dataAbout }) => {
 		<div>
 			<HomeImg backgroundImg={ImgAbout} />
 			<main>
-				<article className="collapses-container">
+				<article className="collapse-container --about">
 					{dataAbout.map(({ title, description, id }) => (
 					<Collapse
 						title={title}

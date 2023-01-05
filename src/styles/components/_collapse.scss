@@ -9,11 +9,12 @@ details[open] summary .fa-chevron-down {
 .collapse-container {
     margin-bottom: 30px;
     border-radius: 10px;
+    width: 47%;
 
     @media (max-width: 768px) {
-        width: 100% !important;   
+        width: 100% !important;
+        margin-bottom: 10px;
     }
-
 
     &__title {
         display: flex;
@@ -25,6 +26,13 @@ details[open] summary .fa-chevron-down {
         color: white;
         transform: translateY(10px);
         font-size: 18px;
+        font-weight: 500;
+
+        @media (max-width: 768px) {
+            font-size: 13px;
+            padding: 8px;
+            border-radius: 5px;
+        }
     }
 
     &__text__container {
@@ -34,18 +42,38 @@ details[open] summary .fa-chevron-down {
         border-radius: 10px;
         animation: collapse 4s ease-out forwards;
         font-size: 18px;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 1.5em;
         background-color: #F6F6F6;
-        overflow:hidden ;
-        
+        overflow: hidden;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            border-radius: 5px;
+            padding: 30px 15px 10px;
+        }
+    }
+}
+
+.--about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    details {
+        width: 80%;
+        margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 }
 
 @keyframes collapse {
-    
+
     to {
         height: 100%;
     }
 }
-

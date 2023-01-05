@@ -1,9 +1,5 @@
 const Collapse = ({ title, description, equipments, collapseWidth }) => {
 	return (
-		<section
-			className="collapse-container"
-			style={{ width: collapseWidth }}
-		>
 			<details>
 				<summary className="collapse-container__title">
 					{title} <i className="fa-solid fa-chevron-down"></i>
@@ -13,7 +9,6 @@ const Collapse = ({ title, description, equipments, collapseWidth }) => {
 					{description ? description : equipments}
 				</div>
 			</details>
-		</section>
 	);
 };
 
