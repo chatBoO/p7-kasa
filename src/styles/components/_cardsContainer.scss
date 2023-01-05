@@ -1,11 +1,4 @@
 .cards-container {
-    // display: flex;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
-    // row-gap: 50px;
-    // padding: 50px;
-    // background-color: #F6F6F6;
-    // border-radius: 25px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 340px);
@@ -13,5 +6,12 @@
     justify-content: space-around;
     background-color: #F6F6F6;
     border-radius: 25px 25px 0px 0px;
-    padding: 30px;
+    padding: 50px 20px;
+
+    @media (max-width: 768px) {
+        background:none;
+        padding: 0px;
+        gap: 20px;
+    }
+
 }

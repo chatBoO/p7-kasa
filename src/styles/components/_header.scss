@@ -2,25 +2,53 @@ header {
     display: flex;
     justify-content: space-between;
     padding-bottom: 60px;
+
+    @media (max-width: 768px) {
+
+        padding-bottom: 10px;
+
+        .header__logo {
+            max-width: 45%;
+            object-fit: contain
+        }
+    }
 }
 
 .header__navigation {
     display: flex;
-    width: 15%;
 
     &__liste {
         display: flex;
         justify-content: space-between;
-        padding-left: 0px;
+        padding: 0px;
         width: 100%;
+
+        @media (max-width: 768px) {
+            text-transform: uppercase;
+        }
     }
 
     &__liste a {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 768px) {
+            font-size: 10px;
+        }
+
+        li {
+            padding: 0px 20px;
+            font-size: 24px;
+
+            @media (max-width: 768px) {
+                padding: 0px 10px;
+                font-size: 12px;
+            }
+        }
     }
 }
+
 
 ul {
     list-style-type: none;
@@ -31,20 +59,8 @@ ul {
     animation: navigation 0.2s forwards;
     text-decoration: underline;
 
-//     &::after {
-//         content: "";
-//         height: 2px;
-//         width: 0;
-//         background:  #FF6060;
-//         position: absolute;
-//         border-radius: 10px;
-//         bottom: 0px;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         animation: nav_underline 0.6s ease forwards;
-//     }
-// }
 }
+
 @keyframes navigation {
     0% {
         transfom: scale(1);
@@ -54,9 +70,3 @@ ul {
         transform: scale(1.2);
     }
 }
-
-// @keyframes nav_underline {
-//    to {
-//     width: 100%;
-//    }
-// }

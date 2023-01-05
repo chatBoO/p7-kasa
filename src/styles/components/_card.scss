@@ -1,13 +1,16 @@
 .card-container {
     display: flex;
     align-items: flex-end;
-    width: 340px;
+    // width: 340px;
     height: 340px;
     padding: 20px;
-    background: rgb(255,97,97);
-    background: linear-gradient(180deg, rgba(255,97,97,1) 0%, rgb(119, 57, 57) 90%, rgb(95, 53, 53) 100%);
+    background: linear-gradient(180deg, rgb(253, 252, 252) 0%, rgb(0, 0, 0) 100%);
     border-radius: 10px;
     position: relative;
+
+    @media (max-width: 768px) {
+        height: 255px;
+    }
 
     &__image {
         position: absolute;
@@ -16,16 +19,15 @@
         border-radius: 10px;
         top: 0px;
         left: 0px;
+        opacity: 0.6;
     }
 
     &__text-container {
-        width: 60%;
+        width: 80%;
         position: relative;
-        background: rgba(80, 78, 78, 0.6);
         border-radius: 10px;
 
         &__text {
-            text-align: center;
             width: 100%;
             color: white;
             font-size: 16px;

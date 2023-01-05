@@ -2,9 +2,10 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
-import Rating from "../components/Rating";
 import NotFound from "./NotFound";
 import Accommodations from "../data/logements.json";
+import Rating from "../components/Rating";
+// import AccInformations from "../components/AccInformations";
 
 const Accommodation = () => {
 	const { id } = useParams(); // Récupération de l'id en paramètre URL, avec {id} entre accolades sinon non reconnu
@@ -26,7 +27,7 @@ const Accommodation = () => {
 		return (
 			<main>
 				<Carrousel id={id} pictures={pictures} title={title} />
-
+				{/* <AccInformations location={location} tags={tags} host={host} rating={rating} /> */}
 				<article className="accommodation-container">
 					<section className="accommodation-container__informations">
 						<h1 className="accommodation-container__informations__title">
@@ -58,7 +59,6 @@ const Accommodation = () => {
 						</div>
 					</section>
 				</article>
-
 				<article className="accommodation-collapses">
 					<Collapse
 						title={"Description"}

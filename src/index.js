@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AccommodationsList from "./data/logements.json";
+import DataAbout from "./data/about.json";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,7 +21,7 @@ root.render(
 					path="/"
 					element={<Home accommodations={AccommodationsList} />}
 				/>
-				<Route path="/about" element={<About />} />
+				<Route path="/about" element={<About dataAbout={DataAbout} />} />
 				<Route
 					path="/fiche-logement/:id"
 					element={
