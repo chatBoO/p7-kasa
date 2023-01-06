@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeImg from '../components/HomeImg'
-import ImgHome from "../assets/img-home.png"
+import ImgHome from "../assets/img-home.webp"
 import CardsContainer from '../components/CardsContainer'
 
 

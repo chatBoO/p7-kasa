@@ -1,6 +1,6 @@
 import React from "react";
 import Collapse from "../components/Collapse";
-import ImgAbout from "../assets/img-about.svg";
+import ImgAbout from "../assets/img-about.webp";
 import HomeImg from "../components/HomeImg";
 
 const About = ({ dataAbout }) => {
