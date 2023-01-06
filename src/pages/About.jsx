@@ -1,12 +1,12 @@
 import React from "react";
 import Collapse from "../components/Collapse";
-import ImgAbout from "../assets/img-about.png";
+import ImgAbout from "../assets/img-about.svg";
 import HomeImg from "../components/HomeImg";
 
 const About = ({ dataAbout }) => {
 	return (
 		<div>
-			<HomeImg backgroundImg={ImgAbout} />
+			<HomeImg backgroundImgAbout={ImgAbout} />
 			<main>
 				<article className="collapse-container --about">
 					{dataAbout.map(({ title, description, id }) => (

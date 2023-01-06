@@ -1,9 +1,7 @@
 .img-container {
-    display: flex;
     width: 100%;
     margin: auto;
     border-radius: 25px;
-    position: relative;
     margin-bottom: 40px;
 
     @media (max-width: 768px) {
@@ -29,15 +27,29 @@
         }
 
     }
-    
+
     &__image {
         width: 100%;
         border-radius: 25px;
         max-height: 220px;
-        
+
         @media (max-width: 768px) {
             min-height: 110px;
             border-radius: 10px;
+        }
+    }
+}
+
+.--home {
+    display: flex;
+    position: relative;
+}
+
+.--about {
+
+    img {
+        @media (max-width: 768px) {
+            height: 225px;
         }
     }
 }
