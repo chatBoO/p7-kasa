@@ -4,7 +4,7 @@
     align-items: center;
     padding-bottom: 20px;
     
-    @media (max-width: 768px) {
+    @media (max-width: $mobile-size) {
         flex-direction: column;
         padding-bottom: 0px;
     }
@@ -16,7 +16,7 @@
             font-size: 36px;
             font-weight: 500;
 
-            @media (max-width: 768px) {
+            @media (max-width: $mobile-size) {
                 font-size: 18px;
             }
         }
@@ -25,7 +25,7 @@
             font-size: 18px;
             font-weight: 500;
 
-            @media (max-width: 768px) {
+            @media (max-width: $mobile-size) {
                 font-size: 14px;
             }
         }
@@ -37,7 +37,7 @@
             width: 100%;
             gap: 4%;
 
-            @media (max-width: 768px) {
+            @media (max-width: $mobile-size) {
                 justify-content: flex-start;
                 width: 100%;
                 gap: 10px
@@ -54,7 +54,7 @@
                 background: rgb(255,97,97);
                 color: white;
 
-                @media (max-width: 768px) {
+                @media (max-width: $mobile-size) {
                     font-size: 10px;
                     padding: 3px 17px;
                     border-radius: 5px;
@@ -68,7 +68,7 @@
 
     &__informations2 {
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-size) {
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
@@ -87,7 +87,7 @@
                 font-size: 18px;
                 font-weight: 400;
 
-                @media (max-width: 768px) {
+                @media (max-width: $mobile-size) {
                     font-size: 12px;
                 }
             }
@@ -97,7 +97,7 @@
                 height: 64px;
                 border-radius: 50%;
 
-                @media (max-width: 768px) {
+                @media (max-width: $mobile-size) {
                     width: 32px;
                     height: 32px;   
                 }
@@ -110,7 +110,7 @@
             align-items: center;
 
             img {
-                @media (max-width: 768px) {
+                @media (max-width: $mobile-size) {
                     width: 15px;
                     height: 15px;       
                 }
@@ -123,7 +123,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile-size) {
         flex-direction: column;
     }
 }

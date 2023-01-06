@@ -11,7 +11,7 @@ details[open] summary .fa-chevron-down {
     border-radius: 10px;
     width: 47%;
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile-size) {
         width: 100% !important;
         margin-bottom: 10px;
     }
@@ -28,7 +28,7 @@ details[open] summary .fa-chevron-down {
         font-size: 18px;
         font-weight: 500;
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-size) {
             font-size: 13px;
             padding: 8px;
             border-radius: 5px;
@@ -47,7 +47,7 @@ details[open] summary .fa-chevron-down {
         background-color: #F6F6F6;
         overflow: hidden;
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-size) {
             font-size: 12px;
             border-radius: 5px;
             padding: 30px 15px 10px;
@@ -65,7 +65,7 @@ details[open] summary .fa-chevron-down {
         width: 80%;
         margin-bottom: 20px;
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-size) {
             width: 100%;
         }
     }

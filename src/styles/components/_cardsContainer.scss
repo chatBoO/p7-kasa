@@ -8,17 +8,17 @@
     border-radius: 25px 25px 0px 0px;
     padding: 50px 50px;
 
-    @media (min-width: 992px) {
+    @media (min-width: $tablet-size) {
         grid-template-columns: repeat(auto-fit, 31%);
         gap: 20px;
     }
 
-    @media (min-width: 768px) and (max-width: 992px) {
+    @media (min-width: $mobile-size) and (max-width: $tablet-size) {
         grid-template-columns: repeat(auto-fit, 48%);
         gap: 20px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile-size) {
         grid-template-columns: repeat(auto-fit, 100%);
         gap: 20px;
         background:none;

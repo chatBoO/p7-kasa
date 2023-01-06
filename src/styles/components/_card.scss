@@ -8,7 +8,7 @@
     position: relative;
     box-shadow: 3px 3px 5px 2px rgba(134, 134, 134, 0.808);
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile-size) {
         height: 255px;
     }
 

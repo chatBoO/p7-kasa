@@ -4,9 +4,10 @@
     border-radius: 25px;
     margin-bottom: 40px;
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile-size) {
         margin-bottom: 20px;
     }
+    
 
     &__text {
         position: absolute;
@@ -19,7 +20,11 @@
         top: 50%;
         transform: translateY(-50%);
 
-        @media (max-width: 768px) {
+        @media (min-width: $mobile-size) and (max-width: $tablet-size) {
+            font-size: 32px;
+        }
+
+        @media (max-width: $mobile-size) {
             width: 65%;
             text-align: start;
             font-size: 24px;
@@ -33,7 +38,7 @@
         border-radius: 25px;
         max-height: 220px;
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-size) {
             min-height: 110px;
             border-radius: 10px;
         }
@@ -48,7 +53,7 @@
 .--about {
 
     img {
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-size) {
             height: 225px;
         }
     }

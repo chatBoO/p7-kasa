@@ -8,7 +8,7 @@
         top: 50%;
         transform: translate(0, -50%);
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-size) {
             transform: translate(0, -50%) scale(0.3) ;
         }
     }
@@ -19,7 +19,7 @@
         top: 50%;
         transform: translate(0, -50%);
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-size) {
             transform: translate(0, -50%) scale(0.3) ;
         }
     }
@@ -29,7 +29,7 @@
         height: 415px;
         border-radius: 15px;
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-size) {
             height: 255px;
         }
     }
@@ -41,7 +41,7 @@
         color: white;
         font-weight: bold;
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-size) {
             display: none;
         }
     }

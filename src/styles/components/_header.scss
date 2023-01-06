@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     padding-bottom: 60px;
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile-size) {
 
         padding-bottom: 10px;
 
@@ -23,7 +23,7 @@ header {
         padding: 0px;
         width: 100%;
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-size) {
             text-transform: uppercase;
         }
     }
@@ -33,7 +33,7 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-size) {
             font-size: 10px;
         }
 
@@ -41,7 +41,7 @@ header {
             padding: 0px 20px;
             font-size: 24px;
 
-            @media (max-width: 768px) {
+            @media (max-width: $mobile-size) {
                 padding: 0px 10px;
                 font-size: 12px;
             }
