@@ -6,13 +6,12 @@ import HomeImg from "../components/HomeImg";
 const About = ({ dataAbout }) => {
 	return (
 		<div>
-			<HomeImg backgroundImgAbout={ImgAbout} />
+			<HomeImg backgroundImg={ImgAbout} long={true} />
 			<main>
 				<article className="collapse-container --about">
 					{dataAbout.map(({ title, description, id }) => (
 						<Collapse
 							title={title}
-							collapseWidth={"80%"}
 							description={description}
 							key={title + id}
 						/>

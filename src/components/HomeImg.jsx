@@ -1,29 +1,17 @@
 import React from "react";
 
-const HomeImg = ({ backgroundImgHome, backgroundImgAbout, text }) => {
+const HomeImg = ({ backgroundImg, text, long }) => {
 
-	return backgroundImgHome ? (
-
-		<div className="img-container --home">
+	return (
+		<div className={`img-container ${long ? "--about" : "--home"}`}>
 			<img
-				src={backgroundImgHome}
+				src={backgroundImg}
 				alt="Chez vous, partout et ailleurs"
 				className="img-container__image"
 			/>
-			<h1 className="img-container__text">{text}</h1>
+			{text ? <h1 className="img-container__text">{text}</h1> : null}
 		</div>
-
-	) : (
-
-		<div className="img-container --about">
-			<img
-				src={backgroundImgAbout}
-				alt="Fond de bienvenue"
-				className="img-container__image --about"
-			/>
-		</div>
-
-	);
+	)
 };
 
 export default HomeImg;

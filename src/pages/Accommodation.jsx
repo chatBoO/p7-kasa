@@ -38,7 +38,6 @@ const Accommodation = () => {
 						<Collapse
 							title={"Description"}
 							description={description}
-							collapseWidth={"47%"}
 						/>
 					</section>
 					<section className="collapse-container">
@@ -51,7 +50,6 @@ const Accommodation = () => {
 									))}
 								</ul>
 							}
-							collapseWidth={"47%"}
 						/>
 					</section>
 				</article>

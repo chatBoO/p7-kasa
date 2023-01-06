@@ -7,7 +7,7 @@ import CardsContainer from '../components/CardsContainer'
 const Home = ({ accommodations }) => {
   return (
     <div>
-        <HomeImg backgroundImgHome={ImgHome} text="Chez vous, partout et ailleurs" />
+        <HomeImg backgroundImg={ImgHome} long={false} text="Chez vous, partout et ailleurs" />
         <main>
         <CardsContainer accommodations={accommodations} />
         </main>
