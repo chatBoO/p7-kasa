@@ -1,9 +1,9 @@
 import React from "react";
 
-const HomeImg = ({ backgroundImg, text, long }) => {
+const Banner = ({ backgroundImg, text, about }) => {
 
 	return (
-		<div className={`img-container ${long ? "--about" : "--home"}`}>
+		<div className={`img-container ${about ? "--about" : "--home"}`}>
 			<img
 				src={backgroundImg}
 				alt="Chez vous, partout et ailleurs"
@@ -14,4 +14,4 @@ const HomeImg = ({ backgroundImg, text, long }) => {
 	)
 };
 
-export default HomeImg;
+export default Banner;
