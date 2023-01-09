@@ -1,4 +1,4 @@
-const Collapse = ({ title, description, equipments, collapseWidth }) => {
+const Collapse = ({ title, description, equipments }) => {
 	return (
 			<details>
 				<summary className="collapse-container__title">
