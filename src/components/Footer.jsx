@@ -3,7 +3,7 @@ import LogoFooter from "../assets/logo_kasa_footer.png";
 
 const Footer = () => {
 
-	const currentYear = new Date().getFullYear();
+	const currentYear = new Date().getFullYear(); // Récupération et stockage de la date actuelle pour que le copyright soit toujours à jour
 
 	return (
 		<footer>

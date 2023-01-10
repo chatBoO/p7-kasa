@@ -1,7 +1,7 @@
 import React from "react";
 import Rating from "./Rating";
 
-const AccInformations = ({ title, location, tags, host, rating }) => {
+const AccInformations = ({ title, location, tags, host, rating }) => { // Les props sont récupérées par "destructuration"
 	return (
 		<article className="accommodation-container">
 			<section className="accommodation-container__informations">

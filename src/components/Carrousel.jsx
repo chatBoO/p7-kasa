@@ -32,7 +32,7 @@ const Carrousel = ({ id, title, pictures }) => {
 				</div>
 			))}
 
-			{pictures.length > 1 && (
+			{pictures.length > 1 && ( // Affichage des flèches uniquement si le tableau "pictures" contient plus d'une image
 				<img
 					src={LeftArrow}
 					alt="Flèche gauche"
@@ -51,7 +51,7 @@ const Carrousel = ({ id, title, pictures }) => {
 			)}
 
             <span className="carrousel__image-number">
-                {currentPicture +1} / {pictures.length}
+                {currentPicture +1} / {pictures.length} {/* Affichage du numéro de l'image courante ainsi que du nombre total d'images */}
             </span>
 		</section>
 	);
