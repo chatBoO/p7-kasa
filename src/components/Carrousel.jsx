@@ -6,18 +6,15 @@ const Carrousel = ({ id, title, pictures }) => {
 	const [currentPicture, setCurrentPicture] = useState(0);
 
 	const goToLeft = () => {
-		setCurrentPicture(
-			currentPicture === 0
-				? pictures.length - 1 // "pictures.length" -1 car l'index commence à 0
-				: currentPicture - 1
+		// Si en cliquant le state currentPicture est à 0 alors on repasse currentPicture à "pictures.length - 1" sinon on descend le state de 1
+		setCurrentPicture (
+			currentPicture === 0 ? pictures.length - 1 : currentPicture - 1 // "pictures.length" -1 car l'index commence à 0
 		); 
 	};
 
 	const goToRight = () => {
-		setCurrentPicture(
-			currentPicture === pictures.length - 1
-				? 0
-				: currentPicture + 1
+		setCurrentPicture ( // Si en cliquant le state de currentPicture est à "pictures.length - 1" alors on repasse à 0 sinon on monte le state de 1
+			currentPicture === pictures.length - 1 ? 0 : currentPicture + 1
 		);
 	};
 
@@ -25,7 +22,7 @@ const Carrousel = ({ id, title, pictures }) => {
 		<section className="carrousel">
 			{pictures.map((picture, index) => (
 				<div key={id + index}>
-					{index === currentPicture && (
+					{index === currentPicture && ( // currentPicture est initialisée à 0 sera donc affichée l'image avec index[0] (la première image)
 						<img
 							src={picture}
 							alt={title}
