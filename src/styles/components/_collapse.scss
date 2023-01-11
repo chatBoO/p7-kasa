@@ -27,6 +27,7 @@ details[open] summary .fa-chevron-down {
         transform: translateY(10px);
         font-size: 18px;
         font-weight: 500;
+        user-select: none;
 
         @media (max-width: $mobile-size) {
             font-size: 13px;
