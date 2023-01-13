@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
 import NotFound from "./NotFound";
@@ -9,8 +9,15 @@ import AccInformations from "../components/AccInformations";
 const Accommodation = () => {
 	const { id } = useParams(); // Récupération de l'id en paramètre URL, avec {id} entre accolades sinon reconnu en tant qu'objet
 	const currentAccommodation = Accommodations.find((acc) => acc.id === id); // Utilisation de la méthode .find pour chercher le logement avec son id
+	const navigate = useNavigate();
 
-	if (currentAccommodation !== undefined) { // Si le logement est trouvé alors on utilise la destructuration d'objet Javascript pour créer des constantes avec les valeurs associées
+	useEffect(() => {
+		if (currentAccommodation === undefined) {
+			navigate("/404");
+		}
+	}, []);
+
+	if (currentAccommodation) {
 		const {
 			title,
 			location,
@@ -54,8 +61,6 @@ const Accommodation = () => {
 				</article>
 			</main>
 		);
-	} else {
-		return <NotFound />;
 	}
 };
 
