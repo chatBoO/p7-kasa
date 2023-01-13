@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
-import NotFound from "./NotFound";
 import Accommodations from "../data/logements.json";
 import AccInformations from "../components/AccInformations";
 
