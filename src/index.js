@@ -8,8 +8,11 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import AccommodationsList from "./data/logements.json";
+// import AccommodationsList from "./data/logements.json";
 import DataAbout from "./data/about.json";
+
+let AccommodationsList;
+fetch("data/logements.json").then((res) => res.json()).then((data) => AccommodationsList = data)
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
